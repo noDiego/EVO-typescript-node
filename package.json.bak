@@ -1,0 +1,26 @@
+{
+  "name": "typescript-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc src/index.ts",
+    "start:dev": "nodemon -e ts --delay 1000ms --exec ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^17.0.21",
+    "@types/typescript": "^2.0.0",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.2",
+    "typescript": "^4.6.2",
+    "yargs": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/request": "^2.48.8"
+  }
+}
