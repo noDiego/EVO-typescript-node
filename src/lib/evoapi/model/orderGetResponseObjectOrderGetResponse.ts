@@ -56,7 +56,7 @@ export class OrderGetResponseObjectOrderGetResponse {
     /**
     * Código de Respuesta Interno de la plataforma, el POS debe actuar por lo que indican las acciones especificadas en ResponseActions y no por el código de respuesta informado en este campo o elemento, pero es una buena práctica que sea persistido por el mismo.
     */
-    'responseCode': number;
+    'responseCode': string;
     /**
     * Versión del Servicio de la Plataforma con la cual se quiere transaccionar, en caso de no ser especificado será atendido por la última versión del servicio disponible.
     */
@@ -192,7 +192,7 @@ export class OrderGetResponseObjectOrderGetResponse {
         {
             "name": "responseCode",
             "baseName": "ResponseCode",
-            "type": "number"
+            "type": "string"
         },
         {
             "name": "serviceVersion",

@@ -20,7 +20,7 @@ export class SaleObjectSaleValues {
     /**
     * Valor del parámetro
     */
-    'value'?: string | number | boolean | object | null;
+    'value'?: any | null;
 
     static discriminator: string | undefined = undefined;
 
@@ -33,7 +33,7 @@ export class SaleObjectSaleValues {
         {
             "name": "value",
             "baseName": "Value",
-            "type": "string | number | boolean | object"
+            "type": "any"
         }    ];
 
     static getAttributeTypeMap() {

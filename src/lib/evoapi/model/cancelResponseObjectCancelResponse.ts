@@ -53,7 +53,7 @@ export class CancelResponseObjectCancelResponse {
     /**
     * Código de Respuesta Interno de la plataforma, el POS debe actuar por lo que indican las acciones especificadas en ResponseActions y no por el código de respuesta informado en este campo o elemento, pero es una buena práctica que sea persistido por el mismo.
     */
-    'responseCode': number;
+    'responseCode': string;
     /**
     * Tipo de Operación que se está requiriendo, solo necesario sobre formatos que no soportan elementos complejos o compuestos.
     */
@@ -207,7 +207,7 @@ export class CancelResponseObjectCancelResponse {
         {
             "name": "responseCode",
             "baseName": "ResponseCode",
-            "type": "number"
+            "type": "string"
         },
         {
             "name": "answerType",

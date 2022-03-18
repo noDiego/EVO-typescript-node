@@ -30,7 +30,7 @@ export class DepositResponseObjectDepositResponse {
     /**
     * Código de Respuesta Interno de la plataforma, el POS debe actuar por lo que indican las acciones especificadas en ResponseActions y no por el código de respuesta informado en este campo o elemento, pero es una buena práctica que sea persistido por el mismo.
     */
-    'responseCode': number;
+    'responseCode': string;
     /**
     * Acciones a realizar por parte del POS y/o PINPAD en base al resultado de la operación que ha sido procesada. Cada uno de estos actions o acciones están concatenadas por comas. Los posibles actions son OK, Approve, Refuse, IssuerCall, Tickets, WithHold, GetCard, UseTerminalToAuthorize, ConfigurationError, SystemError, ResourceError, ProcessError, Completed, Configure, Display, EnableService y Print.
     */
@@ -489,7 +489,7 @@ export class DepositResponseObjectDepositResponse {
         {
             "name": "responseCode",
             "baseName": "ResponseCode",
-            "type": "number"
+            "type": "string"
         },
         {
             "name": "responseActions",
