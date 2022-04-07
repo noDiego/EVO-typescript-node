@@ -1,6 +1,6 @@
 ## Implementacion
 
-- Se generó el cliente utilizando openapi-generator-5.4.0.
+- Se generó el cliente utilizando openapi-generator-5.4.0. Y la version 5.6.3 de Evo_PaymentAPI
 - Para su uso se copia el directorio "api" y "model" y el archivo api.ts en un directorio lib dentro del proyecto
 - El cliente generado requirió agregar al package.json del proyecto las dependencias:
 `   "request": "^2.88.2",

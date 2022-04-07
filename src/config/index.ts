@@ -1,6 +1,7 @@
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 const args = require('yargs').argv;
 
+//Constantes para configuracion de url y token de servicios multipay
 export default {
     evoapi: {
         url: args.hostname || "https://testcodi.multipay.mx:30801/token/CL/Payments/Authorize/5.6.3",
